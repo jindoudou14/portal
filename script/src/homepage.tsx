@@ -1,6 +1,8 @@
 
 // import React, { useEffect, useRef } from "react";
 import FeaturedCarousel from './featured_carousel'
+import SimpleIconRow from './icons'
+
 
 
 const games = Array.from({ length: 5 }).map((_, i) => ({
@@ -14,7 +16,7 @@ export default function Homepage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 text-slate-900">
-      {/* NAV */}
+
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -40,23 +42,24 @@ export default function Homepage() {
         </div>
       </header>
 
-      {/* HERO */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
 
-        {/* Featured carousel */}
         <section className="mt-8">
             <h2 className="text-xl font-semibold mb-4">Featured</h2>
             <FeaturedCarousel />
 
         </section>
 
-        {/* Games grid */}
         <section id="games" className="mt-8">
-          {/* <div className="flex items-center justify-between">
-            <h2 className="text-xl font-semibold">Popular this week</h2>
-            <a href="#" className="text-indigo-600 text-sm">See all</a>
-          </div> */}
+              <h2 className="text-xl font-semibold mb-4">Featured</h2>
+              <SimpleIconRow />
+
+        </section>
+
+
+        <section  className="mt-8">
+
 
           <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {games.map((g) => (
@@ -71,7 +74,6 @@ export default function Homepage() {
           </div>
         </section>
 
-        {/* CTA */}
         <section id="create" className="mt-10 bg-white rounded-xl p-6 shadow flex items-center justify-between">
           <div>
             <h3 className="text-lg font-semibold">Want to publish your own challenge? Click on the button below!</h3>
@@ -81,7 +83,6 @@ export default function Homepage() {
           </div>
         </section>
 
-        {/* FOOTER */}
         <footer className="mt-12 text-sm text-slate-500">
         </footer>
       </main>

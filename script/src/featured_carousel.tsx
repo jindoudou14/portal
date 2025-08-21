@@ -17,7 +17,6 @@ const Carousel: React.FC = () => {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
-  // Auto-advance slides every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();

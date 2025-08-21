@@ -5,11 +5,7 @@ import SimpleIconRow from './icons'
 
 
 
-// const games = Array.from({ length: 5 }).map((_, i) => ({
-//   id: i + 1,
-//   title: `Project ${i + 1}`,
-//   desc: `A short description of project ${i + 1}`,
-// }));
+
 
 export default function Homepage() {
 
@@ -56,22 +52,6 @@ export default function Homepage() {
 
         </section>
 
-
-        {/* <section  className="mt-8">
-
-
-          <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {games.map((g) => (
-              <div key={g.id} className="bg-white rounded-lg shadow overflow-hidden">
-                <div className="h-28 bg-slate-200" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=800&q=60&auto=format&fit=crop)`, backgroundSize: 'cover' }} />
-                <div className="p-3">
-                  <div className="text-sm font-medium">{g.title}</div>
-                  <div className="text-xs text-slate-500 mt-1">{g.desc}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section> */}
 
         <section id="create" className="mt-10 bg-white rounded-xl p-6 shadow flex items-center justify-between">
           <div>
